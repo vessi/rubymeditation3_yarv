@@ -58,7 +58,7 @@ template = 'standard'
 Render.haml_precompiled_template(template) # put to cache
 Render.get_views_scope
  
-RBench.run(3000) do
+RBench.run(10000) do
   column :classic, :title => "Classic"
   column :haml_is, :title => "Haml IS"
  
